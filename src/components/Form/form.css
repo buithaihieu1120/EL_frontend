@@ -1,0 +1,74 @@
+/* Auth Form */
+.authForm {
+  margin: 50px auto;
+  width: 320px;
+  height: 480px;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 7px;
+  padding: 1rem 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.authForm__title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+.authForm__item {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 4rem;
+}
+.authForm__input,
+.authForm__button {
+  width: 100%;
+  height: 50px;
+  padding-top: 1rem;
+  padding-left: 9px;
+  outline: none;
+  border: 1px solid var(--text-color);
+  transition: 0.2s;
+  border-radius: 7px;
+}
+.authForm__item label {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  transition: 0.2s;
+}
+.authForm__input:focus ~ label,
+.authForm__input:valid ~ label {
+  top: 10%;
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+.authForm__input:focus {
+  border-width: 2px;
+}
+.authForm__button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #55efc4;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-family: var(--font);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+.authForm__button:hover {
+  background-color: #25dfdc;
+}
+.authForm__link {
+  color: var(--link-color);
+  font-size: 1rem;
+}
